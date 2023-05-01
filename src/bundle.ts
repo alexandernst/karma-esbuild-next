@@ -156,8 +156,12 @@ export class Bundle {
 	}
 
 	private processResult(outputFiles: esbuild.OutputFile[]) {
-		const map = JSON.parse(outputFiles[0].text) as RawSourceMap;
-		const source = outputFiles[1];
+		const map = JSON.parse(
+			outputFiles.find(o => o.path.endsWith(".map"))?.text ?? "",
+		) as RawSourceMap;
+		const source = outputFiles.find(o => o.path.endsWith(".js")) ?? {
+			contents: { buffer: Buffer.from("") },
+		};
 
 		const basename = path.basename(this.file);
 		const code = Buffer.from(source.contents.buffer);

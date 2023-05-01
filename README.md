@@ -5,7 +5,7 @@ An [esbuild](https://github.com/evanw/esbuild) preprocessor for the karma test r
 ## Installation
 
 ```bash
-npm install --save-dev karma-esbuild
+npm install --save-dev karma-esbuild-next
 ```
 
 ## Usage
@@ -34,6 +34,10 @@ module.exports = function (config) {
 			// Add esbuild to your preprocessors
 			"test/**/*.test.js": ["esbuild"],
 		},
+
+    plugins: [
+      "karma-esbuild-next",
+    ],
 
 		esbuild: {
 			// Replace some global variables
