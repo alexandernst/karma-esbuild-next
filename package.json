@@ -1,11 +1,11 @@
 {
-	"name": "karma-esbuild",
-	"version": "2.2.5",
+	"name": "karma-esbuild-next",
+	"version": "1.0.0",
 	"description": "ESBuild preprocessor for karma test runner",
 	"main": "dist/index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/marvinhagemeister/karma-esbuild.git"
+		"url": "git+https://github.com/alexandernst/karma-esbuild-next.git"
 	},
 	"scripts": {
 		"build": "rimraf dist/ && tsc",
@@ -18,7 +18,7 @@
 		"karma-preprocessor",
 		"esbuild"
 	],
-	"author": "Marvin Hagemeister <hello@marvinh.dev>",
+	"author": "Alexander Nestorov <alexandernst@gmail.com>",
 	"license": "MIT",
 	"files": [
 		"dist/"

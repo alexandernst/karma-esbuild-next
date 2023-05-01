@@ -54,3 +54,7 @@ module.exports = function (config) {
 ## License
 
 `MIT`, see [the LICENSE](./LICENSE) file.
+
+## Fork
+
+This project was forked from https://github.com/marvinhagemeister/karma-esbuild/
