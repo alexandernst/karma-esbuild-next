@@ -1,4 +1,4 @@
-# karma-esbuild
+# karma-esbuild-next
 
 An [esbuild](https://github.com/evanw/esbuild) preprocessor for the karma test runner. The main benefits of `esbuild` is speed and readability of the compiled output.
 
